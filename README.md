@@ -1,0 +1,2 @@
+# Vue-SlotMachine
+SlotMachine
