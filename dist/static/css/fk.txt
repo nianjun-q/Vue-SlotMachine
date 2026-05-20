@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lobster);
+i@import url(https://fonts.googleapis.com/css?family=Lobster);
 
 body,
 html {
@@ -179,7 +179,6 @@ html {
   color: #f4f2e0;
   content: "SlotMachine"
 }
-
 
 #SlotMachine .body {
   position: absolute;
@@ -482,14 +481,14 @@ html {
   /* ... 你原本設定背景圖的那些語法維持不變 ... */
 
   /* 💡 新增以下兩行：直接利用 CSS 屬性把裡面所有的元件一起往下推 */
-  padding-top: 250px;       /* 數值加大，把整台拉霸機（連同按鈕）一起往下擠，露出「愛甲男子」的字 */
+  padding-top: 200px;       /* 數值加大，把整台拉霸機（連同按鈕）一起往下擠，露出「愛甲男子」的字 */
   box-sizing: border-box;   /* 確保 padding 不會撐破大背景的高度 */
 }
 
 /* 🎯 同時修正內部元件的縮放基準點 */
 #SlotMachine > div {
   /* 💡 縮放控制：你可以根據感覺調整，例如 0.75 或 0.8 */
-  transform: scale(0.9); 
+  transform: scale(0.75); 
   
   /* 💡 關鍵：把縮放基準點設在「上方置中」，這樣縮小後才不會跟按鈕裂開 */
   transform-origin: center top; 
@@ -499,18 +498,6 @@ html {
   display: none !important;
 }
 
-/* 🎯 終極修復：用「透明化」取代「刪除」，救回崩壞的排版！ */
-#SlotMachine .badge {
-  display: flex !important;                 /* 1. 還原被 display: none 搞砸的排版空間 */
-  background-color: transparent !important; /* 2. 讓紅色的弧形背景變完全透明 */
-  border-color: transparent !important;     /* 3. 讓外圈深藍色的邊框變完全透明 */
-  box-shadow: none !important;              /* 4. 清除上方的白色亮光陰影 */
-}
-
-/* 5. 隱藏弧形裡面原本寫著 "SlotMachine" 的復古英文字 */
-#SlotMachine .badge span {
-  display: none !important;
-}
-
 
 /*# sourceMappingURL=app.927b02fd90cff26fcd2376060259618b.css.map */
+
