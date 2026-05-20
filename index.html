@@ -23,3 +23,28 @@
     <div id="app"></div>
   </body>
 </html>
+<style>
+    /* 🎯 強行蓋過所有打包後的 CSS 設定 */
+    #SlotMachine {
+      padding-top: 200px !important;
+      box-sizing: border-box !important;
+    }
+    #SlotMachine > div {
+      transform: scale(0.75) !important;
+      transform-origin: center top !important;
+    }
+    #SlotMachine .badge {
+      display: flex !important;
+      background-color: transparent !important;
+      border-color: transparent !important;
+      box-shadow: none !important;
+    }
+    #SlotMachine .badge span {
+      display: none !important;
+    }
+    #SlotMachine + div, 
+    #SlotMachine ~ footer {
+      display: none !important;
+    }
+  </style>
+</head>
