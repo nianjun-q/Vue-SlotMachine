@@ -24,7 +24,7 @@
   </body>
 </html>
 <style>
-    /* 🎯 強行蓋過所有打包後的 CSS 設定 */
+    /* 🎯 終極修正：直接注入最外層 index.html，強行覆蓋所有舊設定！ */
     #SlotMachine {
       padding-top: 200px !important;
       box-sizing: border-box !important;
@@ -42,7 +42,8 @@
     #SlotMachine .badge span {
       display: none !important;
     }
-    #SlotMachine + div, 
+    /* 隱藏沒用的舊按鈕和頁尾 */
+    #SlotMachine + div,
     #SlotMachine ~ footer {
       display: none !important;
     }
