@@ -514,3 +514,12 @@ html {
 
 
 /*# sourceMappingURL=app.927b02fd90cff26fcd2376060259618b.css.map */
+#SlotMachine .badge {
+  display: flex !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+#SlotMachine .badge span {
+  display: none !important;
+}
